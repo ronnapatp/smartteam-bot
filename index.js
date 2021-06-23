@@ -1,9 +1,10 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client();
 
+
 bot.on("ready" , function(){
     console.log('Logged is as ${bot.user.tag}!!');
-    bot.user.setActivity('Dis bot V1.0.0')
+    bot.user.setActivity('Smart team bot V1.0.0')
 });
 
 bot.on("message" , msg => {
@@ -11,73 +12,152 @@ bot.on("message" , msg => {
         msg.reply('Hello bro');
     }
 })
+
 bot.on("message" , msg => {
     if (msg.content === 'command'){
-        msg.channel.send('facebook = Smart team facebook');
-        msg.channel.send('instagram = Smart team instagram');
-        msg.channel.send('twitter = Smart team twitter');
-        msg.channel.send('info = Smart team information')
-        msg.channel.send('github = Smart team bot code by github')
-        msg.channel.send('More command will coming soon! pls wait')
+        const exampleEmbed = new Discord.MessageEmbed()
+	.setColor('#3498DB')
+	.setTitle('COMMAND')
+    .addField('contact :' , 'Smart team contact')
+	.addField('facebook :' , 'Smart team facebook')
+    .addField('instagram :' ,'Smart team instagram')
+    .addField('twitter :' ,'Smart team twitter')
+    .addField('youtube :' ,'Smart team youtube')
+    .addField('info :' ,'Smart team information')
+    .addField('github :' , 'Smart team bot code by github')
+    .addField('inviteme :' , 'Link to invite smart team bot')
+    .addField('invention :' , 'Our invention')
+    .addField('command :' , 'Show this massage')
+	.setTimestamp()
+	.setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+msg.channel.send(exampleEmbed);
+    }
+})
+
+
+bot.on("message" , msg => {
+    if (msg.content === 'invention'){
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team Invention')
+        .setDescription('This page is not avilable')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
+    }
+})
+bot.on("message" , msg => {
+    if (msg.content === 'contact'){
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team contact')
+        .setDescription('This page is not avilable')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
     }
 })
 bot.on("message" , msg => {
     if (msg.content === 'info'){
-        msg.channel.send("ข้อความจะมาเร็วๆนี้");
-        msg.channel.send("รอหน่อยน้าาาาาา")
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team info')
+        .setDescription('This page is not avilable')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
+    }
+    
+})
+bot.on("message" , msg => {
+    if (msg.content === 'inviteme'){
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team bot link invite')
+        .addField('Invite link :' ,'https://discord.com/oauth2/authorize?client_id=845168117990162442&permissions=0&scope=bot')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
     }
 })
+
 bot.on("message" , msg => {
     if (msg.content === 'github'){
-        msg.channel.send("This is github link");
-        msg.channel.send("https://github.com/ronnapatsri/smartteam-bot")
-        msg.channel.send("Pls read 'READ ME' before do anything")
-    }
-})
-bot.on("message" , msg => {
-    if (msg.content === 'คำส้่ง'){
-        msg.channel.send('facebook = facebook ของ Smart team');
-        msg.channel.send('instagram = instagram ของ Smart team');
-        msg.channel.send('twitter = twitter ของ Smart team');
-        msg.channel.send('คำสั่งอื่นจะมาในเร็วๆ นี้');
-    }
-})
-bot.on("message" , msg => {
-    if (msg.content === 'piebot'){
-        msg.reply('Pie Bot is create by Pie');
-    }
-})
-bot.on("message" , msg => {
-    if (msg.content === 'piebotend'){
-        msg.channel.send('See you soon Now i am **OFFLINE**');
-    }
-})
-bot.on("message" , msg => {
-    if (msg.content === 'piebotstart'){
-        msg.channel.send("What's up Now i am **ONLINE**");
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team github')
+        .setDescription('Read READ ME in github before do anything')
+        .addField('Contribute @ github:' ,'https://github.com/ronnapatsri/smartteam-bot')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
     }
 })
 bot.on("message" , msg => {
     if (msg.content === 'facebook'){
-        msg.channel.send("https://www.facebook.com/smartteaminnovationgroup55/");
-        msg.reply("อย่าลืมกดไลค์Pageด้วยละ")
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team facebook')
+        .setDescription('อย่าลืมกดไลค์Pageด้วยละ')
+        .addField('Facebook page :' ,'https://www.facebook.com/smartteaminnovationgroup55/')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
+
     }
 })
 bot.on("message" , msg => {
     if (msg.content === 'twitter'){
-        msg.reply("Smart team ยังไม่มีTwitter");
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team twitter')
+        .setDescription('Smart team ยังไม่มี Twitter')
+        .addField('Twitter :' ,'ยังไม่มีจ้าาาาา')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
     }
 })
 bot.on("message" , msg => {
     if (msg.content === 'instagram'){
-        msg.reply("Smart team ยังไม่มีInstagram");
+        const exampleEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Smart team instagram')
+        .setDescription('Smart team ยังไม่มี Instagram')
+        .addField('Instagram :' ,'ยังไม่มีจ้าาาา')
+        .setTimestamp()
+        .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+
+        msg.channel.send(exampleEmbed);
     }
 })
 bot.on("message" , msg => {
-    if (msg.content === 'sponsor'){
-        msg.channel.send("**NO SPONSOR**");
+    if (msg.content === 'youtube'){
+            const exampleEmbed = new Discord.MessageEmbed()
+            .setColor('#0099ff')
+            .setTitle('Smart team youtube')
+            .setDescription('Smart team ยังไม่มี Youtube')
+            .addField('Youtube :' ,'ยังไม่มีจ้าาาา')
+            .setTimestamp()
+            .setFooter('Contribute @ github: https://github.com/ronnapatsri/smartteam-bot');
+    
+            msg.channel.send(exampleEmbed);
     }
 })
+
+ 
+
+
+
+
 bot.on("message" , msg => {
     if (msg.content === 'อีดอกทอง'){
         msg.reply("เเสงมันจ้าสะเหลือเกินนนนน");
@@ -210,10 +290,33 @@ bot.on("message" , msg => {
     }
 })
 bot.on("message" , msg => {
-    if (msg.content === 'มีม'){
-        Files: [
-            "https://pbs.twimg.com/media/EMtY4AhVUAA1ZCm.jpg"
-        ]
+    if (msg.content === 'dick'){
+        msg.reply("My dick is better than you!! LOL");
+    }
+})
+bot.on("message" , msg => {
+    if (msg.content === 'Dick'){
+        msg.reply("My dick is better than you!! LOL");
+    }
+})
+bot.on("message" , msg => {
+    if (msg.content === 'Pussy'){
+        msg.reply("Dammmmmmmmmmmm");
+    }
+})
+bot.on("message" , msg => {
+    if (msg.content === 'pussy'){
+        msg.reply("Dammmmmmmmmmmm");
+    }
+})
+bot.on("message" , msg => {
+    if (msg.content === 'vagina'){
+        msg.reply("Dammmmmmmmmmmm");
+    }
+})
+bot.on("message" , msg => {
+    if (msg.content === 'Vagina'){
+        msg.reply("Dammmmmmmmmmmm");
     }
 })
 bot.login('')
