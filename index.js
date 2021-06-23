@@ -30,7 +30,8 @@ bot.on("message" , msg => {
 bot.on("message" , msg => {
     if (msg.content === 'github'){
         msg.channel.send("This is github link");
-        msg.channel.send("รอหน่อยน้าาาาาา")
+        msg.channel.send("https://github.com/ronnapatsri/smartteam-bot")
+        msg.channel.send("Pls read 'READ ME' before do anything")
     }
 })
 bot.on("message" , msg => {
