@@ -172,4 +172,4 @@ bot.on("message" , msg => {
 
 
 
-bot.login('ODQ1MTY4MTE3OTkwMTYyNDQy.YKdCJQ.hVt-s0S11bEA2-F-HKkIsr25f50')
+bot.login('')
