@@ -43,11 +43,21 @@ npm install discord.js --save
 - 9.00 AM - 17.00 PM (GMT+7)
 
 # File 📁
+- Bot commands
+> command.js
+> 
+> image.js
+- tracker
+> badword.js
 - Readme.md
 - index.js (Main bot file)
 - pachage.json
 - package-lock.json
 
+## Error files 🚨
+- image.js
+
 ### Last edit ✏️
 - 29/6/2021
 
+📌README📌
